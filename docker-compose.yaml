@@ -1,0 +1,14 @@
+services:
+  app:
+    pull_policy: always
+    image: 'ghcr.io/michielvha/image-resizer:latest'
+    container_name: image-resizer
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '8186:8080'
+networks:
+  default:
+    external: true
+    name: npm_default
+
