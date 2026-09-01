@@ -18,7 +18,7 @@
     "vite": "^7"
   },
   "dependencies": {
-    "lucide": "^0.460"
+    "lucide": "^1.0.0"
   }
 }
 
